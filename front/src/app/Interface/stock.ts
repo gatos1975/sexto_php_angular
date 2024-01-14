@@ -3,5 +3,5 @@ export interface Stock {
   productoId: number;
   proveedorId: number;
   cantidad: number;
-  precio_Venta: number;
+  precio_venta: number;
 }

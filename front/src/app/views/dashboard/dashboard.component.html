@@ -40,17 +40,17 @@
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Nombres</th>
-              <th scope="col">Telefono</th>
-              <th scope="col">Correo</th>
+              <th scope="col">nombres</th>
+              <th scope="col">telefono</th>
+              <th scope="col">correo</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let producto of productos; let i = index">
+            <tr *ngFor="let proveedor of proveedores; let i = index">
               <td>{{ i + 1 }}</td>
-              <td>{{ producto.Nombre }}</td>
-              <td>{{ producto.Precio }}</td>
-              <td>{{ producto.Cantidad }}</td>
+              <td>{{ proveedor.nombres }}</td>
+              <td>{{ proveedor.telefono }}</td>
+              <td>{{ proveedor.correo }}</td>
               
             </tr>
           </tbody>
@@ -74,12 +74,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let producto of productos; let i = index">
+            <tr *ngFor="let Stock of stocks; let i = index">
               <td>{{ i + 1 }}</td>
-              <td>{{ producto.Nombre }}</td>
-              <td>{{ producto.Precio }}</td>
-              <td>{{ producto.Cantidad }}</td>
-              <td>{{ producto.FechaIngreso }}</td>
+              <td>{{ Stock.productoId }}</td>
+              <td>{{ Stock.proveedorId }}</td>
+              <td>{{ Stock.cantidad }}</td>
+              <td>{{ Stock.precio_venta }}</td>
             </tr>
           </tbody>
         </table>
